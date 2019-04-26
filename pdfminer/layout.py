@@ -233,6 +233,13 @@ class LTChar(LTComponent, LTText):
         self._text = text
         self.matrix = matrix
         self.fontname = font.fontname
+        self.font = {
+                'size': fontsize,
+                'flags': font.flags,
+                'ascent': font.ascent,
+                'descent': font.descent,
+                'italic': font.italic_angle,
+                'leading': font.leading }
         self.ncs = ncs
         self.graphicstate = graphicstate
         self.adv = textwidth * fontsize * scaling
