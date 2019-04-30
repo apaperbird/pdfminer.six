@@ -278,7 +278,7 @@ def enc(x, codec='ascii'):
 
 def bbox2str(bbox):
     (x0, y0, x1, y1) = bbox
-    return '%.3f,%.3f,%.3f,%.3f' % (x0, y0, x1, y1)
+    return '%.3f,%.3f,%.3f,%.3f' % (x0, x1, y0, y1)
 
 
 def matrix2str(m):
