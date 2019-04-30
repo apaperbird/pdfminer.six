@@ -743,6 +743,10 @@ class LTPage(LTLayoutContainer):
         self.rotate = rotate
         return
 
+    def lateness(self, npages):
+        """ get "lateness" of page in document """
+        return float(self.pageid)/npages
+
     def __repr__(self):
         return ('<%s(%r) %s rotate=%r>' %
                 (self.__class__.__name__, self.pageid,
